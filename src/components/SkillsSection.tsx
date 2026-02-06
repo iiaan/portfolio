@@ -8,24 +8,20 @@ const webSkills = [
 const gameDevSkills = [
   { name: "C#", level: 95, gradient: "from-blue-500 to-indigo-500" },
   { name: "Unity", level: 95, gradient: "from-green-400 to-green-600" }, // Verde Unity      // Azul C#
-  {
-    name: "Desarrollo de videojuegos",
-    level: 85,
-    gradient: "from-orange-500 to-red-500",
-  }, // Genérico naranja/rojo
-  { name: "Blender", level: 55, gradient: "from-orange-600 to-orange-800" }, // Naranja Blender
+
+  { name: "Blender", level: 25, gradient: "from-orange-600 to-orange-800" }, // Naranja Blender
 ];
 
 const systemSkills = [
-  { name: "Windows Forms", level: 92, gradient: "from-blue-400 to-blue-600" }, // Azul Windows
-  { name: "Linux", level: 80, gradient: "from-red-500 to-red-700" }, // Rojo Linux / Tux
-  { name: "Git", level: 88, gradient: "from-orange-500 to-red-500" }, // Naranja-rojo Git
+  { name: "Git", level: 90, gradient: "from-orange-500 to-red-500" },
+  { name: ".NET", level: 80, gradient: "from-blue-400 to-blue-600" }, // Azul Windows
+  { name: "Linux", level: 70, gradient: "from-red-500 to-red-700" }, // Rojo Linux / Tux
+  // Naranja-rojo Git
   {
     name: "Bases de datos",
-    level: 65,
+    level: 50,
     gradient: "from-green-500 to-green-700",
   }, // Verde genérico BD
-  { name: "iText", level: 55, gradient: "from-gray-500 to-gray-700" }, // Gris para librerías PDF
 ];
 
 const SkillCard = ({ skill, index }) => (

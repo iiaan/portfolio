@@ -1,9 +1,22 @@
 import { useEffect, useRef, useState } from "react";
 import { ExternalLink, Github, Folder } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { FaSteam } from "react-icons/fa";
+import { FaSteam, FaLinkedin } from "react-icons/fa";
 
 const featuredProjects = [
+  {
+    title: "Global Game Jam Granada 2026 – Blend In",
+    description:
+      "Participé en la Global Game Jam 2026 en Granada como programador. En solo 48 horas desarrollamos ‘Blend In’, una aventura narrativa donde una polilla debe adaptarse a distintos grupos sociales usando máscaras que cambian sus habilidades. Me encargué de la programación de varias mecánicas principales del gameplay, el sistema de animaciones con Blend Trees y el postprocesado visual del juego, trabajando en equipo bajo presión y en un entorno de desarrollo intensivo propio de una game jam.",
+    tags: ["Unity", "C#", "Post-procesado", "Blend Trees"],
+    linkedin:
+      "https://www.linkedin.com/posts/raquelreyes3d_global-game-jam-2026-experience-as-i-mentioned-activity-7424261328338329600-OJG0?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC-j2iMBOHGkcwmEKHNkOX3XuhVNZkIvf08",
+    live: "",
+    gradient: "from-purple-500/20 to-pink-500/20",
+    iconColor: "text-purple-400",
+    borderHover: "hover:border-purple-500/50",
+    image: "https://i.postimg.cc/3N5mkn78/imagen.png",
+  },
   {
     title: "Indie Game Marketplace",
     description:
@@ -40,7 +53,7 @@ const featuredProjects = [
     iconColor: "text-purple-400",
     borderHover: "hover:border-purple-500/50",
     image:
-      "https://media.licdn.com/dms/image/v2/D4E22AQFqMyel8BQV6w/feedshare-shrink_1280/B4EZrbcsicIQAs-/0/1764618324558?e=1769644800&v=beta&t=kSewrL_ZwH5XW-aVJndFkcvRVSeR-SkWEEL-qvsVzHM",
+      "https://raw.githubusercontent.com/iiaan/portfolio/refs/heads/main/images/Timer.png",
   },
   {
     title: "Contribuciones a estudio de Granada",
@@ -52,7 +65,8 @@ const featuredProjects = [
     gradient: "from-purple-500/20 to-pink-500/20",
     iconColor: "text-purple-400",
     borderHover: "hover:border-purple-500/50",
-    video: "https://effervescent-speculoos-855835.netlify.app/nuevo.mp4",
+    video:
+      "https://raw.githubusercontent.com/iiaan/portfolio/main/videos/1.mp4",
   },
 ];
 
@@ -79,7 +93,8 @@ const prototypes = [
     gradient: "from-yellow-500/20 to-orange-500/20",
     iconColor: "text-yellow-400",
     borderHover: "hover:border-yellow-500/50",
-    video: "https://effervescent-speculoos-855835.netlify.app/menu.mp4",
+    video:
+      "https://raw.githubusercontent.com/iiaan/portfolio/main/videos/2.mp4",
     image:
       "https://images.unsplash.com/photo-1581091870622-7e9b2d3c981c?w=600&h=400&fit=crop",
   },
@@ -200,6 +215,14 @@ const ProjectCard = ({ project, index }) => {
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               <FaSteam className="h-5 w-5" />
+            </a>
+          )}
+          {project.linkedin && (
+            <a
+              href={project.linkedin}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <FaLinkedin className="h-5 w-5" />
             </a>
           )}
         </div>
