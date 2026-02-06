@@ -40,7 +40,7 @@ const HeroSection = () => {
             asChild
           >
             <a
-              href="/cv/IanCV.pdf" // Pon aquí la ruta correcta a tu CV
+              href="/portfolio/cv/IanCV.pdf" // Pon aquí la ruta correcta a tu CV
               download="IanCV.pdf" // Nombre del archivo al descargar
             >
               <FileText className="mr-2 h-5 w-5" />
