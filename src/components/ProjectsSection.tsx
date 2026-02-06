@@ -15,7 +15,8 @@ const featuredProjects = [
     gradient: "from-purple-500/20 to-pink-500/20",
     iconColor: "text-purple-400",
     borderHover: "hover:border-purple-500/50",
-    image: "https://i.postimg.cc/3N5mkn78/imagen.png",
+    image:
+      "https://raw.githubusercontent.com/iiaan/portfolio/refs/heads/main/images/1770081662918.jpg",
   },
   {
     title: "Indie Game Marketplace",
@@ -33,7 +34,7 @@ const featuredProjects = [
     title: "Rush the Towers",
     description:
       "Juego 3D desarrollado en Unity. Enfrenté un desafío con la IA de enemigos: la navegación no funcionaba correctamente, lo que me llevó a refactorizar todo el código de rutas usando NavMesh y optimizar la lógica de comportamiento. Todas las tareas las gestioné con Trello y realicé modelado básico en Blender para algunos assets.",
-    tags: ["C#", "Unity", "Blender"],
+    tags: ["C#", "Unity", "Blender", "SteamWorks"],
     live: "",
     gradient: "from-green-500/20 to-teal-500/20",
     iconColor: "text-green-400",
